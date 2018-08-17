@@ -1,3 +1,9 @@
 <resources>
+    <string name="owner_full_name">Owners Full Name</string>
+    <string name="submit_report">Submit a Report</string>
+    <string name="settingimg">settingimg</string>
     <string name="app_name">Cadastre</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="number">+998</string>
+    <string name="sign_up">SIGN UP</string>
 </resources>
