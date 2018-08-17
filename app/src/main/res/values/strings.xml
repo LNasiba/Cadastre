@@ -6,4 +6,11 @@
     <string name="phone_number">Phone Number</string>
     <string name="number">+998</string>
     <string name="sign_up">SIGN UP</string>
+    <string name="owners_phone_number">Owners Phone Number</string>
+    <string name="address">Address</string>
+    <string name="building_area">Building Area (m.sqr)</string>
+    <string name="ground_area">Ground Area (m.sqr)</string>
+    <string name="submit">SUBMIT</string>
+    <string name="request">REQUEST</string>
+    <string name="text">By creating an account you agree to our Terms of Service and Privacy Policy</string>
 </resources>

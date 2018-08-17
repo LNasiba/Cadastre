@@ -7,9 +7,9 @@
         <shape>
             <padding
                 android:bottom="1dp"
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
 
             <solid android:color="#00CCCCCC" />
 
@@ -19,9 +19,9 @@
         <shape>
             <padding
                 android:bottom="1dp"
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
 
             <solid android:color="#10CCCCCC" />
 
@@ -31,9 +31,9 @@
         <shape>
             <padding
                 android:bottom="1dp"
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
 
             <solid android:color="#20CCCCCC" />
 
@@ -43,9 +43,9 @@
         <shape>
             <padding
                 android:bottom="1dp"
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
 
             <solid android:color="#30CCCCCC" />
 
@@ -56,9 +56,9 @@
         <shape>
             <padding
                 android:bottom="1dp"
-                android:left="1dp"
-                android:right="1dp"
-                android:top="1dp" />
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp" />
 
             <solid android:color="#50CCCCCC" />
 
@@ -68,7 +68,7 @@
     <!-- Background -->
     <item>
         <shape>
-            <solid android:color="@android:color/white" />
+            <solid android:color="@color/colorForButton" />
 
         </shape>
     </item>

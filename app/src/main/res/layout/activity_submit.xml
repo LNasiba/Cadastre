@@ -1,73 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorLightGreen">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <RelativeLayout
-        android:id="@+id/relLay1"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:background="#5CAE4C">
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGreen">
 
-        <TextView
-            android:id="@+id/tv_cadastre"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:id="@+id/relLay1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/drawable_action_bar">
+
+            <TextView
+                android:id="@+id/tv_cadastre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ic_settings"
+                android:contentDescription="@string/settingimg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reLay2"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="16dp"
-            android:text="@string/app_name"
-            android:textColor="#fff"
-            android:textSize="22sp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/settingimg"
-            android:src="@drawable/ic_settings" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/reLay2"
-        android:layout_width="330dp"
-        android:layout_height="300dp"
-        android:layout_below="@+id/relLay1"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"
-        android:background="@drawable/drawable_submitcard">
-
-        <TextView
-            android:id="@+id/tv_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_below="@+id/relLay1"
             android:layout_centerHorizontal="true"
-            android:paddingTop="40dp"
-            android:text="@string/submit_report"
-            android:textColor="@color/colorDarkGreen"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_margin="16dp"
+            android:background="@drawable/drawable_submitcard">
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="40dp"
+                android:text="@string/submit_report"
+                android:textColor="@color/colorDarkGreen"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
-        <EditText
-            android:id="@+id/edttext1"
-            android:layout_width="280dp"
+            <EditText
+                android:id="@+id/edttext1"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_submit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/drawable_textbox"
+                android:hint="@string/owner_full_name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="#BEE5B6" />
+
+            <EditText
+                android:id="@+id/edttext2"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edttext1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_textbox"
+                android:hint="@string/owners_phone_number"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="#BEE5B6" />
+
+            <EditText
+                android:id="@+id/edttext3"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edttext2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_textbox"
+                android:hint="@string/address"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="#BEE5B6" />
+
+            <EditText
+                android:id="@+id/edttext4"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edttext3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_textbox"
+                android:hint="@string/building_area"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="#BEE5B6" />
+
+            <EditText
+                android:id="@+id/edttext5"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edttext4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_textbox"
+                android:hint="@string/ground_area"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorDarkGreen"
+                android:textColorHint="#BEE5B6" />
+            
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="#75C965"
+                android:text="@string/request"
+                android:id="@+id/btn_request"
+                android:layout_below="@id/edttext5"
+                android:layout_margin="20dp"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="#75C965"
+                android:text="Photos"
+                android:id="@+id/btn_photos"
+                android:layout_below="@id/btn_request"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text"
+                android:textColor="#75C965"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btn_photos"
+                android:layout_margin="20dp"/>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="320dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/tv_submit"
+            android:layout_below="@+id/reLay2"
+            android:background="@color/colorForButton"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/drawable_textbox"
-            android:hint="@string/owner_full_name"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorDarkGreen" />
+            android:text="@string/submit"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"/>
+
+
 
 
     </RelativeLayout>
-
-
-</RelativeLayout>
+</ScrollView>
